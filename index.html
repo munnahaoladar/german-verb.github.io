@@ -4,96 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>জার্মান Verb তালিকা</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Noto+Sans+Bengali:wght@400;700&display=swap" rel="stylesheet">
     <style>
         /* Basic Styles */
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Roboto', 'Noto Sans Bengali', sans-serif;
             margin: 0;
             padding: 20px;
-            background: linear-gradient(to right, #ece9e6, #ffffff);
-            color: #333;
+            background: linear-gradient(to right, #e2e8f0, #edf2f7); /* Lighter, modern gradient */
+            color: #2d3748; /* Darker text for better readability */
             line-height: 1.6;
         }
 
         h1 {
-            color: #2c3e50;
+            color: #2c5282; /* Deeper blue for heading */
             text-align: center;
             margin-bottom: 40px;
-            font-size: 2.5em;
+            font-size: 2.8em; /* Slightly larger heading */
             font-weight: 700;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.15); /* Stronger shadow */
+            letter-spacing: 0.03em;
+        }
+
+        /* Search Bar Styles */
+        .search-container {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .search-container input[type="text"] {
+            width: 80%;
+            padding: 12px 20px;
+            border: 1px solid #cbd5e0;
+            border-radius: 25px; /* Pill shape */
+            font-size: 1.1em;
+            outline: none;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.06);
+        }
+
+        .search-container input[type="text"]:focus {
+            border-color: #63b3ed; /* Blue on focus */
+            box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5); /* Focus ring */
         }
 
         /* Table Styles */
         .table-container {
-            overflow-x: auto; /* Ensures table is scrollable on small screens */
+            overflow-x: auto;
             margin: 0 auto;
-            max-width: 1200px; /* Max width for wider screens */
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+            max-width: 1200px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12); /* Stronger, softer shadow */
+            border-radius: 12px; /* More rounded corners */
             background-color: #ffffff;
-            padding: 15px;
+            padding: 20px; /* Increased padding */
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
-            min-width: 600px; /* Minimum width to prevent excessive squishing */
+            min-width: 700px; /* Adjusted min-width for better display */
         }
 
         th, td {
-            border: 1px solid #e0e0e0;
-            padding: 15px 12px;
+            border: 1px solid #ebf4f5; /* Lighter border color */
+            padding: 16px 14px; /* Increased padding */
             text-align: left;
             vertical-align: middle;
+            font-size: 1.05em; /* Slightly larger font */
         }
 
         th {
-            background-color: #3498db;
+            background-color: #4299e1; /* Brighter blue for headers */
             color: white;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 0.05em;
-            position: sticky; /* Makes headers stick when scrolling table horizontally */
+            letter-spacing: 0.06em;
+            position: sticky;
             top: 0;
             z-index: 1;
+            white-space: nowrap; /* Prevents header text wrapping */
         }
 
         tr:nth-child(even) {
-            background-color: #f8f8f8;
+            background-color: #f7fafc; /* Very light subtle background for even rows */
         }
 
         tr:hover {
-            background-color: #eef7fc;
+            background-color: #ebf8ff; /* Lighter hover effect */
             transition: background-color 0.3s ease;
         }
 
-        /* Button Styles */
+        /* Download Button Styles */
         .download-button {
             display: block;
-            width: 250px;
-            margin: 40px auto;
-            padding: 18px 30px;
-            background-color: #2ecc71;
+            width: 280px; /* Wider button */
+            margin: 50px auto 30px auto; /* More margin */
+            padding: 20px 35px; /* Larger padding */
+            background-color: #38a169; /* Pleasant green */
             color: white;
             text-align: center;
             text-decoration: none;
-            border-radius: 8px;
-            font-size: 1.2em;
+            border-radius: 10px; /* More rounded */
+            font-size: 1.3em; /* Larger font */
             font-weight: 700;
-            transition: background-color 0.3s ease, transform 0.2s ease;
-            box-shadow: 0 4px 10px rgba(46, 204, 113, 0.3);
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            box-shadow: 0 6px 15px rgba(56, 161, 105, 0.3); /* Stronger shadow */
+            cursor: pointer;
         }
 
         .download-button:hover {
-            background-color: #27ae60;
-            transform: translateY(-2px);
+            background-color: #2f855a; /* Darker green on hover */
+            transform: translateY(-3px); /* More pronounced lift */
+            box-shadow: 0 8px 20px rgba(56, 161, 105, 0.4);
         }
 
         .download-button:active {
             transform: translateY(0);
-            box-shadow: 0 2px 5px rgba(46, 204, 113, 0.3);
+            box-shadow: 0 3px 8px rgba(56, 161, 105, 0.3);
         }
 
         /* Responsive Adjustments */
@@ -102,17 +136,21 @@
                 padding: 15px;
             }
             h1 {
-                font-size: 2em;
+                font-size: 2.2em;
                 margin-bottom: 30px;
             }
+            .search-container input[type="text"] {
+                width: 90%;
+                font-size: 1em;
+            }
             th, td {
-                padding: 10px 8px;
-                font-size: 0.9em;
+                padding: 12px 10px;
+                font-size: 0.95em;
             }
             .download-button {
                 width: 90%;
-                font-size: 1em;
-                padding: 15px 20px;
+                font-size: 1.1em;
+                padding: 18px 25px;
             }
         }
 
@@ -125,8 +163,8 @@
                 padding: 10px;
             }
             th, td {
-                padding: 8px;
-                font-size: 0.8em;
+                padding: 10px;
+                font-size: 0.85em;
             }
             /* Make table headers/cells stack vertically if content is too wide */
             table {
@@ -143,22 +181,26 @@
                 left: -9999px;
             }
             tr {
-                border: 1px solid #ccc;
+                border: 1px solid #e2e8f0;
                 margin-bottom: 15px;
-                border-radius: 5px;
-                box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+                border-radius: 8px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.05);
             }
             td {
                 border: none;
-                border-bottom: 1px solid #eee;
+                border-bottom: 1px solid #ebf4f5;
                 position: relative;
                 padding-left: 50%;
                 text-align: right;
+                white-space: normal; /* Allow content to wrap in stacked cells */
+            }
+            td:last-child {
+                border-bottom: 0;
             }
             td:before {
                 content: attr(data-label);
                 position: absolute;
-                left: 6px;
+                left: 10px;
                 width: 45%;
                 padding-right: 10px;
                 white-space: nowrap;
@@ -172,8 +214,12 @@
 <body>
     <h1>জার্মান Verb তালিকা</h1>
 
+    <div class="search-container">
+        <input type="text" id="searchInput" onkeyup="filterTable()" placeholder="সার্চ করুন (জার্মান বা বাংলা)...">
+    </div>
+
     <div class="table-container">
-        <table>
+        <table id="verbTable">
             <thead>
                 <tr>
                     <th>German Infinitive</th>
@@ -216,7 +262,7 @@
                 <tr><td data-label="German Infinitive">klopfen</td><td data-label="বাংলা অর্থ">টোকা দেওয়া / নক করা</td><td data-label="Präsens">klopft</td><td data-label="Präteritum">klopfte</td><td data-label="Perfekt">hat geklopft</td></tr>
                 <tr><td data-label="German Infinitive">sich frisieren</td><td data-label="বাংলা অর্থ">চুল আঁচড়ানো / সাজানো</td><td data-label="Präsens">frisiert sich</td><td data-label="Präteritum">frisierte sich</td><td data-label="Perfekt">hat sich frisiert</td></tr>
                 <tr><td data-label="German Infinitive">träumen</td><td data-label="বাংলা অর্থ">স্বপ্ন দেখা</td><td data-label="Präsens">träumt</td><td data-label="Präteritum">träumte</td><td data-label="Perfekt">hat geträumt</td></tr>
-                <tr><td data-label="German Infinitive">aufwachen</td><td data-label="বাংলা অর্থ">ঘুম থেকে জাগা</td><td data-label="Präsens">wacht auf</td><td data-label="Präteritum">wachte auf</td><td data-label="Perfekt">ist aufgewacht</td></tr>
+                <tr><td data-label="German Infinitive">aufwachen</td><td data-label="বাংলা অর্থ">ঘুম থেকে জাগা</td><td data-label="Präteritum">wacht auf</td><td data-label="Präteritum">wachte auf</td><td data-label="Perfekt">ist aufgewacht</td></tr>
                 <tr><td data-label="German Infinitive">zudecken</td><td data-label="বাংলা অর্থ">ঢেকে দেওয়া</td><td data-label="Präsens">deckt zu</td><td data-label="Präteritum">deckte zu</td><td data-label="Perfekt">hat zugedeckt</td></tr>
                 <tr><td data-label="German Infinitive">atmen</td><td data-label="বাংলা অর্থ">শ্বাস নেওয়া</td><td data-label="Präsens">atmet</td><td data-label="Präteritum">atmete</td><td data-label="Perfekt">hat geatmet</td></tr>
                 <tr><td data-label="German Infinitive">rauchen</td><td data-label="বাংলা অর্থ">ধূমপান করা</td><td data-label="Präsens">raucht</td><td data-label="Präteritum">rauchte</td><td data-label="Perfekt">hat geraucht</td></tr>
@@ -236,7 +282,7 @@
                 <tr><td data-label="German Infinitive">sich verstecken</td><td data-label="বাংলা অর্থ">লুকানো</td><td data-label="Präsens">versteckt sich</td><td data-label="Präteritum">versteckte sich</td><td data-label="Perfekt">hat sich versteckt</td></tr>
                 <tr><td data-label="German Infinitive">sich verlaufen</td><td data-label="বাংলা অর্থ">পথ হারানো</td><td data-label="Präsens">verläuft sich</td><td data-label="Präteritum">verlief sich</td><td data-label="Perfekt">hat sich verlaufen</td></tr>
                 <tr><td data-label="German Infinitive">sich interessieren</td><td data-label="বাংলা অর্থ">আগ্রহী হওয়া</td><td data-label="Präsens">interessiert sich</td><td data-label="Präteritum">interessierte sich</td><td data-label="Perfekt">hat sich interessiert</td></tr>
-                <tr><td data-label="German Infinitive">sich beschweren</td><td data-label="বাংলা অর্থ">অভিযোগ করা</td><td data-label="Präsens">beschwert sich</td><td data-label="Präteritum">beschwerte sich</td><td data-label="Perfekt">hat sich beschwert</td></tr>
+                <tr><td data-label="German Infinitive">sich beschweren</td><td data-label="বাংলা অর্থ">অভিযোগ করা</td><td data-label="Präsens">beschwert sich</td><td data-label="Präteritum">beschwerte sich</td><td data-label="Perfekt">hat sich beschweren</td></tr>
                 <tr><td data-label="German Infinitive">sich entschuldigen</td><td data-label="বাংলা অর্থ">ক্ষমা চাওয়া</td><td data-label="Präsens">entschuldigt sich</td><td data-label="Präteritum">entschuldigte sich</td><td data-label="Perfekt">hat sich entschuldigt</td></tr>
                 <tr><td data-label="German Infinitive">sich gewöhnen</td><td data-label="বাংলা অর্থ">অভ্যস্ত হওয়া</td><td data-label="Präsens">gewöhnt sich</td><td data-label="Präteritum">gewöhnte sich</td><td data-label="Perfekt">hat sich gewöhnt</td></tr>
                 <tr><td data-label="German Infinitive">sich informieren</td><td data-label="বাংলা অর্থ">তথ্য সংগ্রহ করা</td><td data-label="Präsens">informiert sich</td><td data-label="Präteritum">informierte sich</td><td data-label="Perfekt">hat sich informiert</td></tr>
@@ -320,7 +366,7 @@
                 <tr><td data-label="German Infinitive">segeln</td><td data-label="বাংলা অর্থ">পাল তোলা নৌকা চালানো</td><td data-label="Präsens">segelt</td><td data-label="Präteritum">segelte</td><td data-label="Perfekt">ist gesegelt</td></tr>
                 <tr><td data-label="German Infinitive">salutieren</td><td data-label="বাংলা অর্থ">স্যালুট করা</td><td data-label="Präsens">salutiert</td><td data-label="Präteritum">salutierte</td><td data-label="Perfekt">hat salutiert</td></tr>
                 <tr><td data-label="German Infinitive">sich verbeugen</td><td data-label="বাংলা অর্থ">মাথা নত করা / প্রণাম করা</td><td data-label="Präsens">verbeugt sich</td><td data-label="Präteritum">verbeugte sich</td><td data-label="Perfekt">hat sich verbeugt</td></tr>
-                <tr><td data-label="German Infinitive">sich ducken</td><td data-label="বাংলা অর্থ">নিচু হওয়া / আড়ালে যাওয়া</td><td data-label="Präsens">duckt sich</td><td data-label="Präteritum">duckte sich</td><td data-label="Perfekt">hat sich geduckt</td></tr>
+                <tr><td data-label="German Infinitive">sich ducken</td><td data-label="বাংলা অর্থ">নিচু হওয়া / আড়ালে যাওয়া</td><td data-label="Präteritum">duckt sich</td><td data-label="Präteritum">duckte sich</td><td data-label="Perfekt">hat sich geduckt</td></tr>
                 <tr><td data-label="German Infinitive">sich aufstellen</td><td data-label="বাংলা অর্থ">সোজা হয়ে দাঁড়ানো / লাইনে দাঁড়ানো</td><td data-label="Präsens">stellt sich auf</td><td data-label="Präteritum">stellte sich auf</td><td data-label="Perfekt">hat sich aufgestellt</td></tr>
                 <tr><td data-label="German Infinitive">posieren</td><td data-label="বাংলা অর্থ">পোজ দেওয়া</td><td data-label="Präsens">posiert</td><td data-label="Präteritum">posierte</td><td data-label="Perfekt">hat posiert</td></tr>
                 <tr><td data-label="German Infinitive">sich verbiegen</td><td data-label="বাংলা অর্থ">বাঁকানো</td><td data-label="Präsens">verbiegt sich</td><td data-label="Präteritum">verbog sich</td><td data-label="Perfekt">hat sich verbogen</td></tr>
@@ -363,7 +409,7 @@
                 <tr><td data-label="German Infinitive">bemerken</td><td data-label="বাংলা অর্থ">লক্ষ্য করা</td><td data-label="Präsens">bemerkt</td><td data-label="Präteritum">bemerkte</td><td data-label="Perfekt">hat bemerkt</td></tr>
                 <tr><td data-label="German Infinitive">beobachten</td><td data-label="বাংলা অর্থ">পর্যবেক্ষণ করা</td><td data-label="Präsens">beobachtet</td><td data-label="Präteritum">beobachtete</td><td data-label="Perfekt">hat beobachtet</td></tr>
                 <tr><td data-label="German Infinitive">erkennen</td><td data-label="বাংলা অর্থ">চিনতে পারা / শনাক্ত করা</td><td data-label="Präsens">erkennt</td><td data-label="Präteritum">erkannte</td><td data-label="Perfekt">hat erkannt</td></tr>
-                <tr><td data-label="German Infinitive">bestrafen</td><td data-label="বাংলা অর্থ">শাস্তি দেওয়া</td><td data-label="Präsens">bestraft</td><td data-label="Präteritum">bestrafte</td><td data-label="Perfekt">hat bestraft</td></tr>
+                <tr><td data-label="German Infinitive">bestrafen</td><td data-label="বাংলা অর্থ">শাস্তি দেওয়া</td><td data-label="Präsens">bestraft</td><td data-label="Präteritum">bestrafte</td><td data-label="Perfekt">hat bestrafen</td></tr>
                 <tr><td data-label="German Infinitive">belohnen</td><td data-label="বাংলা অর্থ">পুরস্কৃত করা</td><td data-label="Präsens">belohnt</td><td data-label="Präteritum">belohnte</td><td data-label="Perfekt">hat belohnt</td></tr>
                 <tr><td data-label="German Infinitive">loben</td><td data-label="বাংলা অর্থ">প্রশংসা করা</td><td data-label="Präsens">lobt</td><td data-label="Präteritum">lobte</td><td data-label="Perfekt">hat gelobt</td></tr>
                 <tr><td data-label="German Infinitive">kritisieren</td><td data-label="বাংলা অর্থ">সমালোচনা করা</td><td data-label="Präsens">kritisiert</td><td data-label="Präteritum">kritisierte</td><td data-label="Perfekt">hat kritisiert</td></tr>
@@ -390,7 +436,7 @@
                 <tr><td data-label="German Infinitive">einschlafen</td><td data-label="বাংলা অর্থ">ঘুমিয়ে পড়া</td><td data-label="Präsens">schläft ein</td><td data-label="Präteritum">schlief ein</td><td data-label="Perfekt">ist eingeschlafen</td></tr>
                 <tr><td data-label="German Infinitive">fotografieren</td><td data-label="বাংলা অর্থ">ছবি তোলা</td><td data-label="Präsens">fotografiert</td><td data-label="Präteritum">fotografierte</td><td data-label="Perfekt">hat fotografiert</td></tr>
                 <tr><td data-label="German Infinitive">filmen</td><td data-label="বাংলা অর্থ">ভিডিও করা</td><td data-label="Präsens">filmt</td><td data-label="Präteritum">filmte</td><td data-label="Perfekt">hat gefilmt</td></tr>
-                <tr><td data-label="German Infinitive">posten</td><td data-label="বাংলা অর্থ">পোস্ট করা</td><td data-label="Präsens">postet</td><td data-label="Präteritum">postete</td><td data-label="Perfekt">hat gepostet</td></tr>
+                <tr><td data-label="German Infinitive">posten</td><td data-label="বাংলা অর্থ">পোস্ট করা</td><td data-label="Präteritum">postet</td><td data-label="Präteritum">postete</td><td data-label="Perfekt">hat gepostet</td></tr>
                 <tr><td data-label="German Infinitive">teilen</td><td data-label="বাংলা অর্থ">শেয়ার করা</td><td data-label="Präsens">teilt</td><td data-label="Präteritum">teilte</td><td data-label="Perfekt">hat geteilt</td></tr>
                 <tr><td data-label="German Infinitive">liken</td><td data-label="বাংলা অর্থ">লাইক দেওয়া</td><td data-label="Präsens">liket</td><td data-label="Präteritum">likte</td><td data-label="Perfekt">hat geliket</td></tr>
                 <tr><td data-label="German Infinitive">kommentieren</td><td data-label="বাংলা অর্থ">মন্তব্য করা</td><td data-label="Präsens">kommentiert</td><td data-label="Präteritum">kommentierte</td><td data-label="Perfekt">hat kommentiert</td></tr>
@@ -427,14 +473,14 @@
                 <tr><td data-label="German Infinitive">antworten</td><td data-label="বাংলা অর্থ">উত্তর দেওয়া</td><td data-label="Präsens">antwortet</td><td data-label="Präteritum">antwortete</td><td data-label="Perfekt">hat geantwortet</td></tr>
                 <tr><td data-label="German Infinitive">fühlen</td><td data-label="বাংলা অর্থ">অনুভব করা</td><td data-label="Präsens">fühlt</td><td data-label="Präteritum">fühlte</td><td data-label="Perfekt">hat gefühlt</td></tr>
                 <tr><td data-label="German Infinitive">lieben</td><td data-label="বাংলা অর্থ">ভালোবাসা</td><td data-label="Präsens">liebt</td><td data-label="Präteritum">liebte</td><td data-label="Perfekt">hat geliebt</td></tr>
-                <tr><td data-label="German Infinitive">hassen</td><td data-label="বাংলা অর্থ">ঘৃণা করা</td><td data-label="Präsens">hasst</td><td data-label="Präteritum">hasste</td><td data-label="Perfekt">hat gehasst</td></tr>
+                <tr><td data-label="German Infinitive">hassen</td><td data-label="বাংলা অর্থ">ঘৃণা করা</td><td data-label="Präteritum">hasst</td><td data-label="Präteritum">hasste</td><td data-label="Perfekt">hat gehasst</td></tr>
                 <tr><td data-label="German Infinitive">grüßen</td><td data-label="বাংলা অর্থ">অভিবাদন জানানো</td><td data-label="Präsens">grüßt</td><td data-label="Präteritum">grüßte</td><td data-label="Perfekt">hat gegrüßt</td></tr>
                 <tr><td data-label="German Infinitive">spielen</td><td data-label="বাংলা অর্থ">খেলা করা</td><td data-label="Präsens">spielt</td><td data-label="Präteritum">spielte</td><td data-label="Perfekt">hat gespielt</td></tr>
                 <tr><td data-label="German Infinitive">arbeiten</td><td data-label="বাংলা অর্থ">কাজ করা</td><td data-label="Präsens">arbeitet</td><td data-label="Präteritum">arbeitete</td><td data-label="Perfekt">hat gearbeitet</td></tr>
                 <tr><td data-label="German Infinitive">lernen</td><td data-label="বাংলা অর্থ">শেখা</td><td data-label="Präsens">lernt</td><td data-label="Präteritum">lernte</td><td data-label="Perfekt">hat gelernt</td></tr>
                 <tr><td data-label="German Infinitive">lehren</td><td data-label="বাংলা অর্থ">শেখানো</td><td data-label="Präsens">lehrt</td><td data-label="Präteritum">lehrte</td><td data-label="Perfekt">hat gelehrt</td></tr>
                 <tr><td data-label="German Infinitive">schreiben</td><td data-label="বাংলা অর্থ">লেখা</td><td data-label="Präsens">schreibt</td><td data-label="Präteritum">schrieb</td><td data-label="Perfekt">hat geschrieben</td></tr>
-                <tr><td data-label="German Infinitive">lesen</td><td data-label="বাংলা অর্থ">পড়া</td><td data-label="Präsens">liest</td><td data-label="Präteritum">las</td><td data-label="Perfekt">hat gelesen</td></tr>
+                <tr><td data-label="German Infinitive">lesen</td><td data-label="বাংলা অর্থ">পড়া</td><td data-label="Präteritum">liest</td><td data-label="Präteritum">las</td><td data-label="Perfekt">hat gelesen</td></tr>
                 <tr><td data-label="German Infinitive">kaufen</td><td data-label="বাংলা অর্থ">কেনা</td><td data-label="Präsens">kauft</td><td data-label="Präteritum">kaufte</td><td data-label="Perfekt">hat gekauft</td></tr>
                 <tr><td data-label="German Infinitive">verkaufen</td><td data-label="বাংলা অর্থ">বিক্রি করা</td><td data-label="Präsens">verkauft</td><td data-label="Präteritum">verkaufte</td><td data-label="Perfekt">hat verkauft</td></tr>
                 <tr><td data-label="German Infinitive">bezahlen</td><td data-label="বাংলা অর্থ">পরিশোধ করা</td><td data-label="Präsens">bezahlt</td><td data-label="Präteritum">bezahlte</td><td data-label="Perfekt">hat bezahlt</td></tr>
@@ -444,7 +490,7 @@
                 <tr><td data-label="German Infinitive">essen</td><td data-label="বাংলা অর্থ">খাওয়া</td><td data-label="Präsens">isst</td><td data-label="Präteritum">aß</td><td data-label="Perfekt">hat gegessen</td></tr>
                 <tr><td data-label="German Infinitive">trinken</td><td data-label="বাংলা অর্থ">পান করা</td><td data-label="Präsens">trinkt</td><td data-label="Präteritum">trank</td><td data-label="Perfekt">hat getrunken</td></tr>
                 <tr><td data-label="German Infinitive">schlafen</td><td data-label="বাংলা অর্থ">ঘুমানো</td><td data-label="Präsens">schläft</td><td data-label="Präteritum">schlief</td><td data-label="Perfekt">hat geschlafen</td></tr>
-                <tr><td data-label="German Infinitive">schwimmen</td><td data-label="বাংলা অর্থ">সাঁতার কাটা</td><td data-label="Präsens">schwimmt</td><td data-label="Präteritum">schwamm</td><td data-label="Perfekt">ist geschwommen</td></tr>
+                <tr><td data-label="German Infinitive">schwimmen</td><td data-label="বাংলা অর্থ">সাঁতার কাটা</td><td data-label="Präteritum">schwimmt</td><td data-label="Präteritum">schwamm</td><td data-label="Perfekt">ist geschwommen</td></tr>
                 <tr><td data-label="German Infinitive">fliegen</td><td data-label="বাংলা অর্থ">ওড়া</td><td data-label="Präsens">fliegt</td><td data-label="Präteritum">flog</td><td data-label="Perfekt">ist geflogen</td></tr>
                 <tr><td data-label="German Infinitive">fahren</td><td data-label="বাংলা অর্থ">গাড়ি চালানো / ভ্রমণ করা</td><td data-label="Präsens">fährt</td><td data-label="Präteritum">fuhr</td><td data-label="Perfekt">ist gefahren</td></tr>
                 <tr><td data-label="German Infinitive">reisen</td><td data-label="বাংলা অর্থ">ভ্রমণ করা</td><td data-label="Präsens">reist</td><td data-label="Präteritum">reiste</td><td data-label="Perfekt">ist gereist</td></tr>
@@ -484,10 +530,18 @@
     <script>
         function downloadCSV() {
             let csv = [];
-            let rows = document.querySelectorAll("table tr");
+            // Get visible rows only (after filtering)
+            let rows = document.querySelectorAll("#verbTable tbody tr:not([style*='display: none'])");
             
+            // Add header row
+            let header = [];
+            document.querySelectorAll("#verbTable th").forEach(th => {
+                header.push(th.innerText);
+            });
+            csv.push(header.join(","));
+
             for (let i = 0; i < rows.length; i++) {
-                let row = [], cols = rows[i].querySelectorAll("td, th");
+                let row = [], cols = rows[i].querySelectorAll("td");
                 
                 for (let j = 0; j < cols.length; j++) {
                     let cellText = cols[j].innerText;
@@ -497,7 +551,6 @@
                     }
                     row.push(cellText);
                 }
-                
                 csv.push(row.join(","));        
             }
 
@@ -509,6 +562,36 @@
             downloadLink.style.display = "none";
             document.body.appendChild(downloadLink);
             downloadLink.click();
+            document.body.removeChild(downloadLink); // Clean up
+        }
+
+        function filterTable() {
+            let input, filter, table, tr, td, i, j, txtValue;
+            input = document.getElementById("searchInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("verbTable");
+            tr = table.getElementsByTagName("tr");
+
+            // Loop through all table rows, and hide those who don't match the search query
+            for (i = 1; i < tr.length; i++) { // Start from 1 to skip the header row
+                let rowVisible = false;
+                // Loop through all table cells in the current row
+                for (j = 0; j < tr[i].cells.length; j++) {
+                    td = tr[i].cells[j];
+                    if (td) {
+                        txtValue = td.textContent || td.innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                            rowVisible = true;
+                            break; // If a match is found in any cell, no need to check other cells in this row
+                        }
+                    }
+                }
+                if (rowVisible) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
         }
     </script>
 </body>
