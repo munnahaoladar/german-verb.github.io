@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>জার্মান Verb তালিকা</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(to right, #ece9e6, #ffffff);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+            font-weight: 700;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        /* Table Styles */
+        .table-container {
+            overflow-x: auto; /* Ensures table is scrollable on small screens */
+            margin: 0 auto;
+            max-width: 1200px; /* Max width for wider screens */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            background-color: #ffffff;
+            padding: 15px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 600px; /* Minimum width to prevent excessive squishing */
+        }
+
+        th, td {
+            border: 1px solid #e0e0e0;
+            padding: 15px 12px;
+            text-align: left;
+            vertical-align: middle;
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            position: sticky; /* Makes headers stick when scrolling table horizontally */
+            top: 0;
+            z-index: 1;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8f8f8;
+        }
+
+        tr:hover {
+            background-color: #eef7fc;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Button Styles */
+        .download-button {
+            display: block;
+            width: 250px;
+            margin: 40px auto;
+            padding: 18px 30px;
+            background-color: #2ecc71;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.2em;
+            font-weight: 700;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 10px rgba(46, 204, 113, 0.3);
+        }
+
+        .download-button:hover {
+            background-color: #27ae60;
+            transform: translateY(-2px);
+        }
+
+        .download-button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 5px rgba(46, 204, 113, 0.3);
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 2em;
+                margin-bottom: 30px;
+            }
+            th, td {
+                padding: 10px 8px;
+                font-size: 0.9em;
+            }
+            .download-button {
+                width: 90%;
+                font-size: 1em;
+                padding: 15px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8em;
+                margin-bottom: 20px;
+            }
+            .table-container {
+                padding: 10px;
+            }
+            th, td {
+                padding: 8px;
+                font-size: 0.8em;
+            }
+            /* Make table headers/cells stack vertically if content is too wide */
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap; /* Prevent content from wrapping inside cells */
+            }
+            thead, tbody, th, td, tr {
+                display: block;
+            }
+            thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+            tr {
+                border: 1px solid #ccc;
+                margin-bottom: 15px;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            }
+            td {
+                border: none;
+                border-bottom: 1px solid #eee;
+                position: relative;
+                padding-left: 50%;
+                text-align: right;
+            }
+            td:before {
+                content: attr(data-label);
+                position: absolute;
+                left: 6px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                text-align: left;
+                font-weight: bold;
+                color: #555;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>জার্মান Verb তালিকা</h1>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>German Infinitive</th>
+                    <th>বাংলা অর্থ</th>
+                    <th>Präsens (er/sie/es)</th>
+                    <th>Präteritum (er/sie/es)</th>
+                    <th>Perfekt (haben/sein + Partizip II)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td data-label="German Infinitive">sich schminken</td><td data-label="বাংলা অর্থ">মেকআপ করা</td><td data-label="Präsens">schminkt sich</td><td data-label="Präteritum">schminkte sich</td><td data-label="Perfekt">hat sich geschminkt</td></tr>
+                <tr><td data-label="German Infinitive">sich entscheiden</td><td data-label="বাংলা অর্থ">সিদ্ধান্ত নেওয়া</td><td data-label="Präsens">entscheidet sich</td><td data-label="Präteritum">entschied sich</td><td data-label="Perfekt">hat sich entschieden</td></tr>
+                <tr><td data-label="German Infinitive">warten</td><td data-label="বাংলা অর্থ">অপেক্ষা করা</td><td data-label="Präsens">wartet</td><td data-label="Präteritum">wartete</td><td data-label="Perfekt">hat gewartet</td></tr>
+                <tr><td data-label="German Infinitive">stolpern</td><td data-label="বাংলা অর্থ">হোঁচট খাওয়া</td><td data-label="Präsens">stolpert</td><td data-label="Präteritum">stolperte</td><td data-label="Perfekt">ist gestolpert</td></tr>
+                <tr><td data-label="German Infinitive">sich bewegen</td><td data-label="বাংলা অর্থ">নড়াচড়া করা</td><td data-label="Präsens">bewegt sich</td><td data-label="Präteritum">bewegte sich</td><td data-label="Perfekt">hat sich bewegt</td></tr>
+                <tr><td data-label="German Infinitive">sich verlieben</td><td data-label="বাংলা অর্থ">প্রেমে পড়া</td><td data-label="Präsens">verliebt sich</td><td data-label="Präteritum">verliebte sich</td><td data-label="Perfekt">hat sich verliebt</td></tr>
+                <tr><td data-label="German Infinitive">sich beeilen</td><td data-label="বাংলা অর্থ">তাড়াতাড়ি করা</td><td data-label="Präsens">beeilt sich</td><td data-label="Präteritum">beeilte sich</td><td data-label="Perfekt">hat sich beeilt</td></tr>
+                <tr><td data-label="German Infinitive">ausrutschen</td><td data-label="বাংলা অর্থ">পিছলে যাওয়া</td><td data-label="Präsens">rutscht aus</td><td data-label="Präteritum">rutschte aus</td><td data-label="Perfekt">ist ausgerutscht</td></tr>
+                <tr><td data-label="German Infinitive">sich verletzen</td><td data-label="বাংলা অর্থ">আঘাত পাওয়া</td><td data-label="Präsens">verletzt sich</td><td data-label="Präteritum">verletzte sich</td><td data-label="Perfekt">hat sich verletzt</td></tr>
+                <tr><td data-label="German Infinitive">sich trennen</td><td data-label="বাংলা অর্থ">বিচ্ছেদ হওয়া/আলাদা হওয়া</td><td data-label="Präsens">trennt sich</td><td data-label="Präteritum">trennte sich</td><td data-label="Perfekt">hat sich getrennt</td></tr>
+                <tr><td data-label="German Infinitive">ankommen</td><td data-label="বাংলা অর্থ">পৌঁছানো</td><td data-label="Präsens">kommt an</td><td data-label="Präteritum">কাম অন</td><td data-label="Perfekt">ist angekommen</td></tr>
+                <tr><td data-label="German Infinitive">fallen</td><td data-label="বাংলা অর্থ">পড়ে যাওয়া</td><td data-label="Präsens">fällt</td><td data-label="Präteritum">fiel</td><td data-label="Perfekt">ist gefallen</td></tr>
+                <tr><td data-label="German Infinitive">sich anziehen</td><td data-label="বাংলা অর্থ">পোশাক পরা</td><td data-label="Präsens">zieht sich an</td><td data-label="Präteritum">জোগ সিচ আন</td><td data-label="Perfekt">hat sich angezogen</td></tr>
+                <tr><td data-label="German Infinitive">sich verloben</td><td data-label="বাংলা অর্থ">বাগদান করা</td><td data-label="Präsens">verlobt sich</td><td data-label="Präteritum">verlobte sich</td><td data-label="Perfekt">hat sich verlobt</td></tr>
+                <tr><td data-label="German Infinitive">abreisen</td><td data-label="বাংলা অর্থ">যাত্রা করা/রওনা দেওয়া</td><td data-label="Präsens">reist ab</td><td data-label="Präteritum">reiste ab</td><td data-label="Perfekt">ist abgereist</td></tr>
+                <tr><td data-label="German Infinitive">klettern</td><td data-label="বাংলা অর্থ">আরোহণ করা/ওঠা</td><td data-label="Präsens">klettert</td><td data-label="Präteritum">kletterte</td><td data-label="Perfekt">ist geklettert</td></tr>
+                <tr><td data-label="German Infinitive">sich ausziehen</td><td data-label="বাংলা অর্থ">পোশাক খোলা</td><td data-label="Präsens">zieht sich aus</td><td data-label="Präteritum">জোগ সিচ আউস</td><td data-label="Perfekt">hat sich ausgezogen</td></tr>
+                <tr><td data-label="German Infinitive">sich scheiden lassen</td><td data-label="বাংলা অর্থ">বিবাহবিচ্ছেদ করা</td><td data-label="Präsens">lässt sich scheiden</td><td data-label="Präteritum">liéß সিচ শাইডেন</td><td data-label="Perfekt">hat sich scheiden lassen</td></tr>
+                <tr><td data-label="German Infinitive">vorbereiten</td><td data-label="বাংলা অর্থ">প্রস্তুত করা</td><td data-label="Präsens">bereitet vor</td><td data-label="Präteritum">bereitete vor</td><td data-label="Perfekt">hat vorbereitet</td></tr>
+                <tr><td data-label="German Infinitive">spring</td><td>লাফানো</td><td>springt</td><td>sprang</td><td>ist gesprungen</td></tr>
+                <tr><td data-label="German Infinitive">organisieren</td><td>আয়োজন করা</td><td>organisiert</td><td>organisierte</td><td>hat organisiert</td></tr>
+                <tr><td data-label="German Infinitive">balancieren</td><td>ভারসাম্য রাখা</td><td>balanciert</td><td>balancierte</td><td>hat balanciert</td></tr>
+                <tr><td data-label="German Infinitive">planen</td><td>পরিকল্পনা করা</td><td>plant</td><td>plante</td><td>hat geplant</td></tr>
+                <tr><td data-label="German Infinitive">umarmen</td><td>আলিঙ্গন করা</td><td>umarmt</td><td>umarmte</td><td>hat umarmt</td></tr>
+                <tr><td data-label="German Infinitive">sich duschen</td><td>গোসল করা (শাওয়ার নেওয়া)</td><td>duscht sich</td><td>duschte sich</td><td>hat sich geduscht</td></tr>
+                <tr><td data-label="German Infinitive">entscheiden</td><td>সিদ্ধান্ত নেওয়া</td><td>entscheidet</td><td>entschied</td><td>hat entschieden</td></tr>
+                <tr><td data-label="German Infinitive">küssen</td><td>চুম্বন করা</td><td>küsst</td><td>küsste</td><td>hat geküsst</td></tr>
+                <tr><td data-label="German Infinitive">sich waschen</td><td>ধোয়া/স্নানে করা</td><td>wäscht sich</td><td>wusch sich</td><td>hat sich gewaschen</td></tr>
+                <tr><td data-label="German Infinitive">riskieren</td><td>ঝুঁকি নেওয়া</td><td>riskiert</td><td>riskierte</td><td>hat riskiert</td></tr>
+                <tr><td data-label="German Infinitive">klopfen</td><td>টোকা দেওয়া/নক করা</td><td>klopft</td><td>klopfte</td><td>hat geklopft</td></tr>
+                <tr><td data-label="German Infinitive">sich frisieren</td><td>চুল আঁচড়ানো/সাজানো</td><td>frisiert sich</td><td>frisierte sich</td><td>hat sich frisiert</td></tr>
+                <tr><td data-label="German Infinitive">träumen</td><td>স্বপ্ন দেখা</td><td>träumt</td><td>träume</td><td>hat geträumt</td></tr>
+                <tr><td data-label="German Infinitive">aufwachen</td><td>ঘুম থেকে জাগা</td><td>wacht auf</td><td>wachte auf</td><td>ist aufgewacht</td></tr>
+                <tr><td data-label="German Infinitive">zudecken</td><td>ঢেকে দেওয়া</td><td>deckt zu</td><td>deckte zu</td><td>hat zugedeckt</td></tr>
+                <tr><td data-label="German Infinitive">atmen</td><td>শ্বাস নেওয়া</td><td>atmet</td><td>atmete</td><td>hat geatmet</td></tr>
+                <tr><td data-label="German Infinitive">rauchen</td><td>ধূমপান করা</td><td>raucht</td><td>rauchte</td><td>hat geraucht</td></tr>
+                <tr><td data-label="German Infinitive">niesen</td><td>হাঁচি দেওয়া</td><td>niest</td><td>nieste</td><td>hat geniest</td></tr>
+                <tr><td data-label="German Infinitive">husten</td><td>কাশি দেওয়া</td><td>hustet</td><td>hustete</td><td>hat gehustet</td></tr>
+                <tr><td data-label="German Infinitive">schnarchen</td><td>নাক ডাকা</td><td>schnarcht</td><td>schnarchte</td><td>hat geschnarcht</td></tr>
+                <tr><td data-label="German Infinitive">sich ausruhen</td><td>বিশ্রাম নেওয়া</td><td>ruht sich aus</td><td>ruhte sich aus</td><td>hat sich ausgeruht</td></tr>
+                <tr><td data-label="German Infinitive">meditieren</td><td>ধ্যান করা</td><td>meditiert</td><td>meditierte</td><td>hat meditiert</td></tr>
+                <tr><td data-label="German Infinitive">sich wundern</td><td>অবাক হওয়া</td><td>wundert sich</td><td>wunderte sich</td><td>hat sich gewundert</td></tr>
+                <tr><td data-label="German Infinitive">sich ärgern</td><td>বিরক্ত হওয়া/রাগ করা</td><td>ärgert sich</td><td>ärgerte sich</td><td>hat sich geärgert</td></tr>
+                <tr><td data-label="German Infinitive">sich schämen</td><td>লজ্জা পাওয়া</td><td>schämt sich</td><td>schämte sich</td><td>hat sich geschämt</td></tr>
+                <tr><td data-label="German Infinitive">sich freuen</td><td>আনন্দ করা/খুশি হওয়া</td><td>freut sich</td><td>freute sich</td><td>hat sich gefreut</td></tr>
+                <tr><td data-label="German Infinitive">sich rasieren</td><td>দাড়ি কামানো/শেভ করা</td><td>rasiert sich</td><td>rasierte sich</td><td>hat sich rasiert</td></tr>
+                <tr><td data-label="German Infinitive">sich kämmen</td><td>চুল আঁচড়ানো</td><td>kämmt sich</td><td>kämmte sich</td><td>hat sich gekämmt</td></tr>
+                <tr><td data-label="German Infinitive">sich schneiden</td><td>কাটা</td><td>schneidet sich</td><td>schnitt sich</td><td>hat sich geschnitten</td></tr>
+                <tr><td data-label="German Infinitive">sich verbrühen</td><td>ঝলসে যাওয়া</td><td>verbrüht sich</td><td>verbrühte sich</td><td>hat sich verbrüht</td></tr>
+                <tr><td data-label="German Infinitive">sich verstecken</td><td>লুকানো</td><td>versteckt sich</td><td>versteckte sich</td><td>hat sich versteckt</td></tr>
+                <tr><td data-label="German Infinitive">sich verlaufen</td><td>পথ হারানো</td><td>verläuft sich</td><td>verlief sich</td><td>hat sich verlaufen</td></tr>
+                <tr><td data-label="German Infinitive">sich interessieren</td><td>আগ্রহী হওয়া</td><td>interessiert sich</td><td>interessierte sich</td><td>hat sich interessiert</td></tr>
+                <tr><td data-label="German Infinitive">sich beschweren</td><td>অভিযোগ করা</td><td>beschwert sich</td><td>beschwerte sich</td><td>hat sich beschwert</td></tr>
+                <tr><td data-label="German Infinitive">sich entschuldigen</td><td>ক্ষমা চাওয়া</td><td>entschuldigt sich</td><td>entschuldigte sich</td><td>hat sich entschuldigt</td></tr>
+                <tr><td data-label="German Infinitive">sich gewöhnen</td><td>অভ্যস্ত হওয়া</td><td>gewöhnt sich</td><td>gewöhnte sich</td><td>hat sich gewöhnen</td></tr>
+                <tr><td data-label="German Infinitive">sich informieren</td><td>তথ্য সংগ্রহ করা</td><td>informiert sich</td><td>informierte sich</td><td>hat sich informiert</td></tr>
+                <tr><td data-label="German Infinitive">sich kümmern</td><td>যত্ন নেওয়া/দেখভাল করা</td><td>kümmert sich</td><td>kümmerte sich</td><td>hat sich gekümmert</td></tr>
+                <tr><td data-label="German Infinitive">sich verirren</td><td>পথ হারানো</td><td>verirrt sich</td><td>verirrte sich</td><td>has sich verirrt</td></tr>
+                <tr><td data-label="German Infinitive">sich unterhalten</td><td>কথা বলা/আলাপ করা</td><td>unterhält sich</td><td>unterhielt sich</td><td>has sich unterhalten</td></tr>
+                <tr><td data-label="German Infinitive">sich verabreden</td><td>দেখা করার ব্যবস্থা করা</td><td>verabredet sich</td><td>verabredete sich</td><td>has sich verabredet</td></tr>
+                <tr><td data-label="German Infinitive">sich wiederholen</td><td>পুনরাবৃত্তি করা</td><td>wiederholt sich</td><td>wiederholte sich</td><td>has sich wiederholt</td></tr>
+                <tr><td data-label="German Infinitive">sich vorstellen</td><td>নিজেকে পরিচয় করানো/কল্পনা করা</td><td>stellt sich vor</td><td>stellte sich vor</td><td>has sich vorgestellt</td></tr>
+                <tr><td data-label="German Infinitive">frieren</td><td>ঠাণ্ডা লাগা</td><td>friert</td><td>fror</td><td>hat gefroren</td></tr>
+                <tr><td data-label="German Infinitive">schwitzen</td><td>ঘামানো</td><td>schwitzt</td><td>schwitzte</td><td>hat geschwitzt</td></tr>
+                <tr><td data-label="German Infinitive">sich langweilen</td><td>বিরক্ত হওয়া</td><td>langweilt sich</td><td>langweilte sich</td><td>has sich gelangweilt</td></tr>
+                <tr><td data-label="German Infinitive">sich sorgen</td><td>চিন্তিত হওয়া</td><td>sorgt sich</td><td>sorgte sich</td><td>has sich gesorgt</td></tr>
+                <tr><td data-label="German Infinitive">sich treffen</td><td>দেখা করা</td><td>trifft sich</td><td>traf sich</td><td>has sich getroffen</td></tr>
+                <tr><td data-label="German Infinitive">sich verabschieden</td><td>বিদায় জানানো</td><td>verabschiedet sich</td><td>verabschiedete sich</td><td>has sich verabschiedet</td></tr>
+                <tr><td data-label="German Infinitive">zittern</td><td>কাঁপা</td><td>zittert</td><td>zitterte</td><td>hat gezittert</td></tr>
+                <tr><td data-label="German Infinitive">gähnen</td><td>হাই তোলা</td><td>gähnt</td><td>gähnte</td><td>has gegähnt</td></tr>
+                <tr><td data-label="German Infinitive">summen</td><td>গুনগুন করা</td><td>summt</td><td>summte</td><td>hat gesummt</td></tr>
+                <tr><td data-label="German Infinitive">flüstern</td><td>ফিসফিস করে কথা বলা</td><td>flüstert</td><td>flüsterte</td><td>hat geflüstert</td></tr>
+                <tr><td data-label="German Infinitive">rufen</td><td>ডাকা</td><td>ruft</td><td>rief</td><td>hat gerufen</td></tr>
+                <tr><td data-label="German Infinitive">brüllen</td><td>গর্জন করা/চিৎকার করা</td><td>brüllt</td><td>brüllte</td><td>hat gebrüllt</td></tr>
+                <tr><td data-label="German Infinitive">stottern</td><td>তোতলানো</td><td>stottert</td><td>stotterte</td><td>hat gestottert</td></tr>
+                <tr><td data-label="German Infinitive">sich bedanken</td><td>ধন্যবাদ জানানো</td><td>bedankt sich</td><td>bedankte sich</td><td>has sich bedankt</td></tr>
+                <tr><td data-label="German Infinitive">sich trauen</td><td>সাহস করা/বিয়ে করা</td><td>traut sich</td><td>traute sich</td><td>has sich getraut</td></tr>
+                <tr><td data-label="German Infinitive">sich hinlegen</td><td>শুয়ে পড়া</td><td>legt sich hin</td><td>legte sich hin</td><td>has sich hingelegt</td></tr>
+                <tr><td data-label="German Infinitive">sich hinsetzen</td><td>বসা</td><td>setzt sich hin</td><td>setzte sich hin</td><td>has sich hingesetzt</td></tr>
+                <tr><td data-label="German Infinitive">sich erinnern</td><td>মনে করা/স্মরণ করা</td><td>erinnert sich</td><td>erinnerte sich</td><td>has sich erinnert</td></tr>
+                <tr><td data-label="German Infinitive">sich konzentrieren</td><td>মনোযোগ দেওয়া</td><td>konzentriert sich</td><td>konzentrierte sich</td><td>has sich konzentriert</td></tr>
+                <tr><td data-label="German Infinitive">sich entspannen</td><td>আরাম করা</td><td>entspannt sich</td><td>entspannte sich</td><td>has sich entspannt</td></tr>
+                <tr><td data-label="German Infinitive">sich aufregen</td><td>উত্তেজিত হওয়া</td><td>regt sich auf</td><td>regte sich auf</td><td>has sich aufgeregt</td></tr>
+                <tr><td data-label="German Infinitive">sich beruhigen</td><td>শান্ত হওয়া</td><td>beruhigt sich</td><td>beruhigte sich</td><td>has sich beruhigt</td></tr>
+                <tr><td data-label="German Infinitive">sich erholen</td><td>সুস্থ হওয়া/বিশ্রাম নেওয়া</td><td>erholt sich</td><td>erholte sich</td><td>has sich erholt</td></tr>
+                <tr><td data-label="German Infinitive">sich drehen</td><td>ঘোরা</td><td>dreht sich</td><td>drehte sich</td><td>has sich gedreht</td></tr>
+                <tr><td data-label="German Infinitive">sich sonnen</td><td>রোদ পোহানো</td><td>sonnt sich</td><td>sonnte sich</td><td>has sich gesonnt</td></tr>
+                <tr><td data-label="German Infinitive">sich setzen</td><td>বসা</td><td>setzt sich</td><td>setzte sich</td><td>has sich gesetzt</td></tr>
+                <tr><td data-label="German Infinitive">sich übergeben</td><td>বমি করা</td><td>übergibt sich</td><td>übergab sich</td><td>has sich übergeben</td></tr>
+                <tr><td data-label="German Infinitive">sich irren</td><td>ভুল করা</td><td>irrt sich</td><td>irrte sich</td><td>has sich geirrt</td></tr>
+                <tr><td data-label="German Infinitive">sich verhalten</td><td>আচরণ করা</td><td>verhält sich</td><td>verhielt sich</td><td>has sich verhalten</td></tr>
+                <tr><td data-label="German Infinitive">sich anpassen</td><td>মানিয়ে নেওয়া</td><td>passt sich an</td><td>passte sich an</td><td>has sich angepasst</td></tr>
+                <tr><td data-label="German Infinitive">sich bewerben</td><td>আবেদন করা</td><td>bewirbt sich</td><td>bewarb sich</td><td>has sich beworben</td></tr>
+                <tr><td data-label="German Infinitive">sich erkälten</td><td>ঠাণ্ডা লাগা</td><td>erkältet sich</td><td>erkältete sich</td><td>has sich erkältet</td></tr>
+                <tr><td data-label="German Infinitive">sich abtrocknen</td><td>গা মোছা</td><td>trocknet sich ab</td><td>trocknete sich ab</td><td>has sich abgetrocknet</td></tr>
+                <tr><td data-label="German Infinitive">sich befreien</td><td>মুক্ত করা</td><td>befreit sich</td><td>befreite sich</td><td>has sich befreit</td></tr>
+                <tr><td data-label="German Infinitive">sich baden</td><td>গোসল করা (বাথটাবে)</td><td>badet sich</td><td>badete sich</td><td>has sich gebadet</td></tr>
+                <tr><td data-label="German Infinitive">sich ernähren</td><td>পুষ্টি গ্রহণ করা</td><td>ernährt sich</td><td>ernährte sich</td><td>has sich ernährt</td></tr>
+                <tr><td data-label="German Infinitive">sich fürchten</td><td>ভয় পাওয়া</td><td>fürchtet sich</td><td>fürchtete sich</td><td>has sich gefürchtet</td></tr>
+                <tr><td data-label="German Infinitive">sich erschrecken</td><td>চমকে ওঠা</td><td>erschreckt sich</td><td>erschreckte sich</td><td>has sich erschrocken</td></tr>
+                <tr><td data-label="German Infinitive">sich benehmen</td><td>ব্যবহার করা</td><td>benimmt sich</td><td>benahm sich</td><td>has sich benommen</td></tr>
+                <tr><td data-label="German Infinitive">sich verspäten</td><td>দেরি করা</td><td>verspätet sich</td><td>verspätete sich</td><td>has sich verspätet</td></tr>
+                <tr><td data-label="German Infinitive">sich zeigen</td><td>দেখানো</td><td>zeigt sich</td><td>zeigte sich</td><td>has sich gezeigt</td></tr>
+                <tr><td data-label="German Infinitive">sich vergnügen</td><td>আনন্দ করা</td><td>vergnügt sich</td><td>vergnügte sich</td><td>has sich vergnügt</td></tr>
+                <tr><td data-label="German Infinitive">sich entschließen</td><td>সিদ্ধান্ত নেওয়া</td><td>entschließt sich</td><td>entschloss sich</td><td>has sich entschlossen</td></tr>
+                <tr><td data-label="German Infinitive">schnauben</td><td>ফোঁস ফোঁস করা</td><td>schnaubt</td><td>schnaubte</td><td>hat geschnaubt</td></tr>
+                <tr><td data-label="German Infinitive">schmatzen</td><td>শব্দ করে খাওয়া</td><td>schmatzt</td><td>schmatzte</td><td>hat geschnatzt</td></tr>
+                <tr><td data-label="German Infinitive">schlucken</td><td>গেলা</td><td>schluckt</td><td>schluckte</td><td>hat geschluckt</td></tr>
+                <tr><td data-label="German Infinitive">spucken</td><td>থুথু ফেলা</td><td>spuckt</td><td>spuckte</td><td>hat gespukt</td></tr>
+                <tr><td data-label="German Infinitive">würg</td><td>বমি বমি ভাব হওয়া/গলা টিপে ধরা</td><td>würgt</td><td>würgte</td><td>hat gewürgt</td></tr>
+                <tr><td data-label="German Infinitive">blinzeln</td><td>পলক ফেলা</td><td>blinzelt</td><td>blinzelte</td><td>hat geblinzelt</td></tr>
+                <tr><td data-label="German Infinitive">zucken</td><td>ঝাঁকুনি দেওয়া/কাঁপানো</td><td>zuckt</td><td>zuckte</td><td>hat gezuckt</td></tr>
+                <tr><td data-label="German Infinitive">kauen</td><td>চিবানো</td><td>kaut</td><td>kaute</td><td>hat gekaut</td></tr>
+                <tr><td data-label="German Infinitive">lecken</td><td>চেটে খাওয়া</td><td>leckt</td><td>leckte</td><td>hat geleckt</td></tr>
+                <tr><td data-label="German Infinitive">pfeifen</td><td>শিস দেওয়া</td><td>pfeift</td><td>pfiff</td><td>hat gepfiffen</td></tr>
+                <tr><td data-label="German Infinitive">tippen</td><td>টাইপ করা/আঙুল দিয়ে টোকা দেওয়া</td><td>tippt</td><td>tippte</td><td>hat getippt</td></tr>
+                <tr><td data-label="German Infinitive">wischen</td><td>মোছা</td><td>wischt</td><td>wischte</td><td>hat gewischt</td></tr>
+                <tr><td data-label="German Infinitive">klicken</td><td>ক্লিক করা</td><td>klickt</td><td>klickte</td><td>hat geklickt</td></tr>
+                <tr><td data-label="German Infinitive">drücken</td><td>চাপা</td><td>drückt</td><td>drückte</td><td>hat gedrückt</td></tr>
+                <tr><td data-label="German Infinitive">ziehen</td><td>টানা</td><td>zieht</td><td>zog</td><td>hat gezogen</td></tr>
+                <tr><td data-label="German Infinitive">schlagen</td><td>মারা/পেটানো</td><td>schlägt</td><td>schlug</td><td>hat geschlagen</td></tr>
+                <tr><td data-label="German Infinitive">treten</td><td>লাথি মারা/পা দিয়ে মাড়ানো</td><td>tritt</td><td>trat</td><td>hat getreten</td></tr>
+                <tr><td data-label="German Infinitive">stoßen</td><td>ধাক্কা দেওয়া</td><td>stößt</td><td>stieß</td><td>hat gestoßen</td></tr>
+                <tr><td data-label="German Infinitive">werfen</td><td>ছুঁড়ে ফেলা</td><td>wirft</td><td>warf</td><td>hat geworfen</td></tr>
+                <tr><td data-label="German Infinitive">sich dehnen</td><td>প্রসারণ করা/stretch করা</td><td>dehnt sich</td><td>dehnte sich</td><td>has sich gedehnt</td></tr>
+                <tr><td data-label="German Infinitive">rennen</td><td>দৌড়ানো</td><td>rennt</td><td>rannte</td><td>ist gerannt</td></tr>
+                <tr><td data-label="German Infinitive">joggen</td><td>জগিং করা</td><td>joggt</td><td>joggte</td><td>ist gejoggt</td></tr>
+                <tr><td data-label="German Infinitive">marschieren</td><td>মার্চ করা/পদযাত্রা করা</td><td>marschiert</td><td>marschierte</td><td>ist marschiert</td></tr>
+                <tr><td data-label="German Infinitive">humpeln</td><td>খোঁড়ানো</td><td>humpelt</td><td>humpelte</td><td>ist gehumpelt</td></tr>
+                <tr><td data-label="German Infinitive">galoppieren</td><td>দ্রুত দৌড়ানো (ঘোড়ার মতো)</td><td>galoppiert</td><td>galoppierte</td><td>ist galoppiert</td></tr>
+                <tr><td data-label="German Infinitive">rudern</td><td>নৌকা চালানো (দাঁড় দিয়ে)</td><td>rudert</td><td>ruderte</td><td>ist gerudert</td></tr>
+                <tr><td data-label="German Infinitive">paddeln</td><td>প্যাডেল করা</td><td>paddelt</td><td>paddelte</td><td>ist gepaddelt</td></tr>
+                <tr><td data-label="German Infinitive">schaukeln</td><td>দোলানো</td><td>schaukelt</td><td>schaukelte</td><td>hat geschaukelt</td></tr>
+                <tr><td data-label="German Infinitive">segeln</td><td>পাল তোলা নৌকা চালানো</td><td>segelt</td><td>segelte</td><td>ist gesegelt</td></tr>
+                <tr><td data-label="German Infinitive">salutieren</td><td>স্যালুট করা</td><td>salutiert</td><td>salutierte</td><td>hat salutiert</td></tr>
+                <tr><td data-label="German Infinitive">sich verbeugen</td><td>মাথা নত করা/প্রণাম করা</td><td>verbeugt sich</td><td>verbeugte sich</td><td>has sich verbeugt</td></tr>
+                <tr><td data-label="German Infinitive">sich ducken</td><td>নিচু হওয়া/আড়ালে যাওয়া</td><td>duckt sich</td><td>duckte sich</td><td>has sich geduckt</td></tr>
+                <tr><td data-label="German Infinitive">sich aufstellen</td><td>সোজা হয়ে দাঁড়ানো/লাইনে দাঁড়ানো</td><td>stellt sich auf</td><td>stellte sich auf</td><td>has sich aufgestellt</td></tr>
+                <tr><td data-label="German Infinitive">posieren</td><td>পোজ দেওয়া</td><td>posiert</td><td>posierte</td><td>hat posiert</td></tr>
+                <tr><td data-label="German Infinitive">stolpern</td><td>হোঁচট খাওয়া</td><td>stolpert</td><td>stolperte</td><td>ist gestolpert</td></tr>
+                <tr><td data-label="German Infinitive">balancieren</td><td>ভারসাম্য রাখা</td><td>balanciert</td><td>balancierte</td><td>hat balanciert</td></tr>
+                <tr><td data-label="German Infinitive">sich verbiegen</td><td>বাঁকানো</td><td>verbiegt sich</td><td>verbog sich</td><td>has sich verbogen</td></tr>
+                <tr><td data-label="German Infinitive">sich krümmen</td><td>কুঁকড়ে যাওয়া/বাঁকানো</td><td>krümmt sich</td><td>krümmte sich</td><td>has sich gekrümmt</td></tr>
+                <tr><td data-label="German Infinitive">sich aufrichten</td><td>সোজা হয়ে দাঁড়ানো</td><td>richtet sich auf</td><td>richtete sich auf</td><td>has sich aufgerichtet</td></tr>
+                <tr><td data-label="German Infinitive">sich strecken</td><td>প্রসারিত করা</td><td>streckt sich</td><td>streckte sich</td><td>has sich gestreckt</td></tr>
+                <tr><td data-label="German Infinitive">sich beugen</td><td>ঝুঁকে পড়া</td><td>beugt sich</td><td>beugte sich</td><td>has sich gebogen</td></tr>
+                <tr><td data-label="German Infinitive">sich zusammenrollen</td><td>গুটিয়ে নেওয়া</td><td>rollt sich zusammen</td><td>rollte sich zusammen</td><td>has sich zusammengerollt</td></tr>
+                <tr><td data-label="German Infinitive">sich drehen</td><td>ঘোরা</td><td>dreht sich</td><td>drehte sich</td><td>has sich gedreht</td></tr>
+                <tr><td data-label="German Infinitive">sich aufwärmen</td><td>গরম করা/ওয়ার্ম আপ করা</td><td>wärmt sich auf</td><td>wärmte sich auf</td><td>has sich aufgewärmt</td></tr>
+                <tr><td data-label="German Infinitive">sich bücken</td><td>ঝুঁকে পড়া</td><td>bückt sich</td><td>bückte sich</td><td>has sich gebückt</td></tr>
+                <tr><td data-label="German Infinitive">reiten</td><td>ঘোড়ায় চড়া</td><td>reitet</td><td>ritt</td><td>ist geritten</td></tr>
+                <tr><td data-label="German Infinitive">skifahren</td><td>স্কি করা</td><td>fährt Ski</td><td>fuhr Ski</td><td>ist Ski gefahren</td></tr>
+                <tr><td data-label="German Infinitive">surfen</td><td>সার্ফিং করা</td><td>surft</td><td>surfete</td><td>ist gesurft</td></tr>
+                <tr><td data-label="German Infinitive">tauchen</td><td>ডুব দেওয়া</td><td>taucht</td><td>tauchte</td><td>ist getaucht</td></tr>
+                <tr><td data-label="German Infinitive">fangen</td><td>ধরা</td><td>fängt</td><td>fing</td><td>hat gefangen</td></tr>
+                <tr><td data-label="German Infinitive">tanzen</td><td>নাচ করা</td><td>tanzt</td><td>tanzte</td><td>has getanzt</td></tr>
+                <tr><td data-label="German Infinitive">schieben</td><td>ঠেলে দেওয়া</td><td>schiebt</td><td>schob</td><td>hat geschoben</td></tr>
+                <tr><td data-label="German Infinitive">schleppen</td><td>টেনে নিয়ে যাওয়া</td><td>schleppt</td><td>schleppte</td><td>hat geschleppt</td></tr>
+                <tr><td data-label="German Infinitive">schütteln</td><td>ঝাঁকানো</td><td>schüttelt</td><td>schüttelte</td><td>has geschüttelt</td></tr>
+                <tr><td data-label="German Infinitive">kitzeln</td><td>সুড়সুড়ি দেওয়া</td><td>kitzelt</td><td>kitzelte</td><td>hat gekitzelt</td></tr>
+                <tr><td data-label="German Infinitive">beweisen</td><td>প্রমাণ করা</td><td>beweist</td><td>bewies</td><td>hat bewiesen</td></tr>
+                <tr><td data-label="German Infinitive">lachen</td><td>হাসা</td><td>lacht</td><td>lachte</td><td>hat gelacht</td></tr>
+                <tr><td data-label="German Infinitive">beschützen</td><td>রক্ষা করা</td><td>beschützt</td><td>beschützte</td><td>hat beschützt</td></tr>
+                <tr><td data-label="German Infinitive">erklären</td><td>ব্যাখ্যা করা</td><td>erklärt</td><td>erklärte</td><td>hat erklärt</td></tr>
+                <tr><td data-label="German Infinitive">weinen</td><td>কাঁদা</td><td>weint</td><td>weinte</td><td>hat geweint</td></tr>
+                <tr><td data-label="German Infinitive">beruhigen</td><td>শান্ত করা</td><td>beruhigt</td><td>beruhigte</td><td>hat beruhigt</td></tr>
+                <tr><td data-label="German Infinitive">vorstellen</td><td>পরিচয় করানো/উপস্থাপন করা</td><td>stellt vor</td><td>stellte vor</td><td>hat vorgestellt</td></tr>
+                <tr><td data-label="German Infinitive">schreien</td><td>চিৎকার করা</td><td>schreit</td><td>schrie</td><td>hat geschrien</td></tr>
+                <tr><td data-label="German Infinitive">ermutigen</td><td>উৎসাহিত করা</td><td>ermutigt</td><td>ermutigte</td><td>hat ermutigt</td></tr>
+                <tr><td data-label="German Infinitive">warnen</td><td>সতর্ক করা</td><td>warnt</td><td>warnte</td><td>hat gewarnt</td></tr>
+                <tr><td data-label="German Infinitive">vergleichen</td><td>তুলনা করা</td><td>vergleicht</td><td>verglich</td><td>hat verglichen</td></tr>
+                <tr><td data-label="German Infinitive">bemerken</td><td>লক্ষ্য করা</td><td>bemerkt</td><td>bemerkte</td><td>hat bemerkt</td></tr>
+                <tr><td data-label="German Infinitive">beobachten</td><td>পর্যবেক্ষণ করা</td><td>obachtet</td><td>obachtete</td><td>hat beobachtet</td></tr>
+                <tr><td data-label="German Infinitive">erkennen</td><td>চিনতে পারা/শনাক্ত করা</td><td>erkennt</td><td>erkannte</td><td>hat erkannt</td></tr>
+                <tr><td data-label="German Infinitive">bestrafen</td><td>শাস্তি দেওয়া</td><td>bestraft</td><td>bestrafte</td><td>hat bestrafed</td></tr>
+                <tr><td data-label="German Infinitive">belohnen</td><td>পুরস্কৃত করা</td><td>belohnt</td><td>belohnte</td><td>hat belohnt</td></tr>
+                <tr><td data-label="German Infinitive">loben</td><td>প্রশংসা করা</td><td>lobt</td><td>lobte</td><td>hat gelobt</td></tr>
+                <tr><td data-label="German Infinitive">kritisieren</td><td>সমালোচনা করা</td><td>kritisierte</td><td>kritisierte</td><td>hat kritisiert</td></tr>
+                <tr><td data-label="German Infinitive">ignorieren</td><td>উপেক্ষা করা</td><td>ignoriert</td><td>ignorierte</td><td>hat ignoriert</td></tr>
+                <tr><td data-label="German Infinitive">überraschen</td><td>অবাক করা</td><td>überrascht</td><td>überraschte</td><td>hat überrascht</td></tr>
+                <tr><td data-label="German Infinitive">enttäuschen</td><td>হতাশ করা</td><td>enttäuscht</td><td>enttäuschte</td><td>hat enttäuscht</td></tr>
+                <tr><td data-label="German Infinitive">verzeihen</td><td>ক্ষমা করা</td><td>verzeiht</td><td>verzieh</td><td>hat verziehen</td></tr>
+                <tr><td data-label="German Infinitive">anlügen</td><td>মিথ্যা কথা বলা</td><td>lügt an</td><td>log an</td><td>hat angelogen</td></tr>
+                <tr><td data-label="German Infinitive">betrügen</td><td>ঠকানো/প্রতারণা করা</td><td>betrügt</td><td>betrog</td><td>hat betrogen</td></tr>
+                <tr><td data-label="German Infinitive">ausnutzen</td><td>সুযোগ নেওয়া/অপব্যবহার করা</td><td>nutzt aus</td><td>nutzte aus</td><td>hat ausgenutzt</td></tr>
+                <tr><td data-label="German Infinitive">ärgern</td><td>বিরক্ত করা</td><td>ärgert</td><td>ärgerte</td><td>hat geärgert</td></tr>
+                <tr><td data-label="German Infinitive">provozieren</td><td>উস্কে দেওয়া</td><td>provoziert</td><td>provozierte</td><td>hat provoziert</td></tr>
+                <tr><td data-label="German Infinitive">beleidigen</td><td>অপমান করা</td><td>beleidigt</td><td>beleidigte</td><td>hat beleidigt</td></tr>
+                <tr><td data-label="German Infinitive">verspotten</td><td>উপহাস করা</td><td>verspottet</td><td>verspottete</td><td>hat verspottet</td></tr>
+                <tr><td data-label="German Infinitive">respektieren</td><td>সম্মান করা</td><td>respektiert</td><td>respektierte</td><td>hat respektiert</td></tr>
+                <tr><td data-label="German Infinitive">bewundern</td><td>প্রশংসা করা/প্রশংসা করা</td><td>bewundert</td><td>bewunderte</td><td>hat bewundert</td></tr>
+                <tr><td data-label="German Infinitive">anbeten</td><td>পূজা করা/উপাসনা করা</td><td>anbetet</td><td>anbetete</td><td>has anbeted</td></tr>
+                <tr><td data-label="German Infinitive">verehren</td><td>শ্রদ্ধা করা</td><td>verehrt</td><td>verehrte</td><td>hat verehrt</td></tr>
+                <tr><td data-label="German Infinitive">schätzen</td><td>মূল্যায়ন করা/কদর করা</td><td>schätzt</td><td>schätzte</td><td>hat geschätzt</td></tr>
+                <tr><td data-label="German Infinitive">genießen</td><td>উপভোগ করা</td><td>genießt</td><td>genoss</td><td>hat genossen</td></tr>
+                <tr><td data-label="German Infinitive">ertragen</td><td>সহ্য করা</td><td>erträgt</td><td>ertrug</td><td>hat ertragen</td></tr>
+                <tr><td data-label="German Infinitive">zeigen</td><td>দেখানো</td><td>zeigt</td><td>zeigte</td><td>hat gezeigt</td></tr>
+                <tr><td data-label="German Infinitive">gehen</td><td>যাওয়া</td><td>geht</td><td>ging</td><td>ist gegangen</td></tr>
+                <tr><td data-label="German Infinitive">einschlafen</td><td>ঘুমিয়ে পড়া</td><td>schläft ein</td><td>schlief ein</td><td>ist eingeschlafen</td></tr>
+                <tr><td data-label="German Infinitive">fotografieren</td><td>ছবি তোলা</td><td>fotografiert</td><td>fotografierte</td><td>hat fotografiert</td></tr>
+                <tr><td data-label="German Infinitive">filmen</td><td>ভিডিও করা</td><td>filmt</td><td>filmte</td><td>hat gefilmt</td></tr>
+                <tr><td data-label="German Infinitive">posten</td><td>পোস্ট করা</td><td>postet</td><td>postete</td><td>hat geposted</td></tr>
+                <tr><td data-label="German Infinitive">teilen</td><td>শেয়ার করা</td><td>teilt</td><td>teilte</td><td>hat geteilt</td></tr>
+                <tr><td data-label="German Infinitive">liken</td><td>লাইক দেওয়া</td><td>liket</td><td>likte</td><td>hat geliket</td></tr>
+                <tr><td data-label="German Infinitive">kommentieren</td><td>মন্তব্য করা</td><td>kommentiert</td><td>kommentierte</td><td>hat kommentiert</td></tr>
+                <tr><td data-label="German Infinitive">folgen</td><td>অনুসরণ করা</td><td>folgt</td><td>folgte</td><td>ist gefolgt</td></tr>
+                <tr><td data-label="German Infinitive">abonnieren</td><td>সাবস্ক্রাইব করা</td><td>abonniert</td><td>abonnierte</td><td>hat abonniert</td></tr>
+                <tr><td data-label="German Infinitive">löschen</td><td>মুছে ফেলা</td><td>löscht</td><td>löschte</td><td>hat gelöscht</td></tr>
+                <tr><td data-label="German Infinitive">speichern</td><td>সংরক্ষণ করা</td><td>speichert</td><td>speicherte</td><td>hat gespeichert</td></tr>
+                <tr><td data-label="German Infinitive">kommen</td><td>আসা</td><td>kommt</td><td>kam</td><td>ist gekommen</td></tr>
+                <tr><td data-label="German Infinitive">sein</td><td>হওয়া</td><td>ist</td><td>war</td><td>ist gewesen</td></tr>
+                <tr><td data-label="German Infinitive">haben</td><td>থাকা</td><td>hat</td><td>hatte</td><td>hat gehabt</td></tr>
+                <tr><td data-label="German Infinitive">machen</td><td>করা</td><td>macht</td><td>machte</td><td>hat gemacht</td></tr>
+                <tr><td data-label="German Infinitive">sagen</td><td>বলা</td><td>sagt</td><td>sagte</td><td>hat gesagt</td></tr>
+                <tr><td data-label="German Infinitive">sehen</td><td>দেখা</td><td>sieht</td><td>sah</td><td>hat gesehen</td></tr>
+                <tr><td data-label="German Infinitive">hören</td><td>শোনা</td><td>hört</td><td>hörte</td><td>hat gehört</td></tr>
+                <tr><td data-label="German Infinitive">wissen</td><td>জানা</td><td>weiß</td><td>wusste</td><td>hat gewusst</td></tr>
+                <tr><td data-label="German Infinitive">denken</td><td>চিন্তা করা</td><td>denkt</td><td>dachte</td><td>hat gedacht</td></tr>
+                <tr><td data-label="German Infinitive">geben</td><td>দেওয়া</td><td>gibt</td><td>gab</td><td>hat gegeben</td></tr>
+                <tr><td data-label="German Infinitive">helfen</td><td>সাহায্য করা</td><td>hilft</td><td>half</td><td>hat geholfen</td></tr>
+                <tr><td data-label="German Infinitive">nehmen</td><td>নেওয়া</td><td>nimmt</td><td>nahm</td><td>hat genommen</td></tr>
+                <tr><td data-label="German Infinitive">wollen</td><td>চাওয়া</td><td>will</td><td>wollte</td><td>hat gewollt</td></tr>
+                <tr><td data-label="German Infinitive">können</td><td>পারা</td><td>kann</td><td>konnte</td><td>hat gekonnt</td></tr>
+                <tr><td data-label="German Infinitive">müssen</td><td>অবশ্যই করা</td><td>muss</td><td>musste</td><td>hat gemusst</td></tr>
+                <tr><td data-label="German Infinitive">sollen</td><td>উচিত</td><td>soll</td><td>sollte</td><td>hat gesollt</td></tr>
+                <tr><td data-label="German Infinitive">dürfen</td><td>অনুমতি থাকা</td><td>darf</td><td>durfte</td><td>hat gedurft</td></tr>
+                <tr><td data-label="German Infinitive">lassen</td><td>অনুমতি দেওয়া/ছেড়ে দেওয়া</td><td>lässt</td><td>ließ</td><td>hat gelassen</td></tr>
+                <tr><td data-label="German Infinitive">stehen</td><td>দাঁড়ানো</td><td>steht</td><td>stand</td><td>has gestanden</td></tr>
+                <tr><td data-label="German Infinitive">liegen</td><td>শুয়ে থাকা/পড়ে থাকা</td><td>liegt</td><td>lag</td><td>has gelegen</td></tr>
+                <tr><td data-label="German Infinitive">sitzen</td><td>বসা</td><td>sitzt</td><td>saß</td><td>has gesessen</td></tr>
+                <tr><td data-label="German Infinitive">bleiben</td><td>থাকা/অবস্থান করা</td><td>bleibt</td><td>blieb</td><td>ist geblieben</td></tr>
+                <tr><td data-label="German Infinitive">finden</td><td>খুঁজে পাওয়া</td><td>findet</td><td>fand</td><td>hat gefunden</td></tr>
+                <tr><td data-label="German Infinitive">verlieren</td><td>হারানো</td><td>verliert</td><td>verlor</td><td>has verloren</td></tr>
+                <tr><td data-label="German Infinitive">suchen</td><td>খোঁজা</td><td>sucht</td><td>suchte</td><td>hat gesucht</td></tr>
+                <tr><td data-label="German Infinitive">fragen</td><td>জিজ্ঞাসা করা</td><td>fragt</td><td>fragte</td><td>hat gefragt</td></tr>
+                <tr><td data-label="German Infinitive">antworten</td><td>উত্তর দেওয়া</td><td>antwortet</td><td>antwortete</td><td>hat geantwortet</td></tr>
+                <tr><td data-label="German Infinitive">fühlen</td><td>অনুভব করা</td><td>fühlt</td><td>fühlte</td><td>hat gefühlt</td></tr>
+                <tr><td data-label="German Infinitive">lieben</td><td>ভালোবাসা</td><td>liebt</td><td>liebte</td><td>hat geliebt</td></tr>
+                <tr><td data-label="German Infinitive">hassen</td><td>ঘৃণা করা</td><td>hasst</td><td>hasste</td><td>hat gehasst</td></tr>
+                <tr><td data-label="German Infinitive">grüßen</td><td>অভিবাদন জানানো</td><td>grüßt</td><td>grüßte</td><td>hat gegrüßt</td></tr>
+                <tr><td data-label="German Infinitive">spielen</td><td>খেলা করা</td><td>spielt</td><td>spielte</td><td>hat gespielt</td></tr>
+                <tr><td data-label="German Infinitive">arbeiten</td><td>কাজ করা</td><td>arbeitet</td><td>arbeitete</td><td>hat gearbeitet</td></tr>
+                <tr><td data-label="German Infinitive">lernen</td><td>শেখা</td><td>lernt</td><td>lernte</td><td>has gelernt</td></tr>
+                <tr><td data-label="German Infinitive">lehren</td><td>শেখানো</td><td>lehrt</td><td>lehrte</td><td>hat gelehrt</td></tr>
+                <tr><td data-label="German Infinitive">schreiben</td><td>লেখা</td><td>schreibt</td><td>schrieb</td><td>hat geschrieben</td></tr>
+                <tr><td data-label="German Infinitive">lesen</td><td>পড়া</td><td>liest</td><td>las</td><td>has gelesen</td></tr>
+                <tr><td data-label="German Infinitive">kaufen</td><td>কেনা</td><td>kauft</td><td>kaufte</td><td>has gekauft</td></tr>
+                <tr><td data-label="German Infinitive">verkaufen</td><td>বিক্রি করা</td><td>verkauft</td><td>verkaufte</td><td>hat verkauft</td></tr>
+                <tr><td data-label="German Infinitive">bezahlen</td><td>পরিশোধ করা</td><td>bezahlt</td><td>bezahlte</td><td>hat bezahlt</td></tr>
+                <tr><td data-label="German Infinitive">bekommen</td><td>পাওয়া</td><td>bekommt</td><td>bekam</td><td>hat bekommen</td></tr>
+                <tr><td data-label="German Infinitive">bestellen</td><td>অর্ডার করা</td><td>bestellt</td><td>bestellte</td><td>hat bestellt</td></tr>
+                <tr><td data-label="German Infinitive">kochen</td><td>রান্না করা</td><td>kocht</td><td>kochte</td><td>hat gekocht</td></tr>
+                <tr><td data-label="German Infinitive">essen</td><td>খাওয়া</td><td>isst</td><td>aß</td><td>has gegessen</td></tr>
+                <tr><td data-label="German Infinitive">trinken</td><td>পান করা</td><td>trinkt</td><td>trank</td><td>has getrunken</td></tr>
+                <tr><td data-label="German Infinitive">schlafen</td><td>ঘুমানো</td><td>schläft</td><td>schlief</td><td>has geschlafen</td></tr>
+                <tr><td data-label="German Infinitive">schwimmen</td><td>সাঁতার কাটা</td><td>schwimmt</td><td>schwamm</td><td>ist geschwommen</td></tr>
+                <tr><td data-label="German Infinitive">fliegen</td><td>ওড়া</td><td>fliegt</td><td>flog</td><td>ist geflogen</td></tr>
+                <tr><td data-label="German Infinitive">fahren</td><td>গাড়ি চালানো/ভ্রমণ করা</td><td>fährt</td><td>fuhr</td><td>ist gefahren</td></tr>
+                <tr><td data-label="German Infinitive">reisen</td><td>ভ্রমণ করা</td><td>reist</td><td>reiste</td><td>ist gereist</td></tr>
+                <tr><td data-label="German Infinitive">treffen</td><td>দেখা করা</td><td>trifft</td><td>traf</td><td>hat getroffen</td></tr>
+                <tr><td data-label="German Infinitive">öffnen</td><td>খোলা</td><td>öffnet</td><td>öffnete</td><td>hat geöffnet</td></tr>
+                <tr><td data-label="German Infinitive">schließen</td><td>বন্ধ করা</td><td>schließt</td><td>schloss</td><td>has geschlossen</td></tr>
+                <tr><td data-label="German Infinitive">bauen</td><td>নির্মাণ করা</td><td>baut</td><td>baute</td><td>hat gebaut</td></tr>
+                <tr><td data-label="German Infinitive">zerstören</td><td>ধ্বংস করা</td><td>zerstört</td><td>zerstörte</td><td>hat zerstört</td></tr>
+                <tr><td data-label="German Infinitive">putzen</td><td>পরিষ্কার করা</td><td>putzt</td><td>putzte</td><td>hat geputzt</td></tr>
+                <tr><td data-label="German Infinitive">reparieren</td><td>মেরামত করা</td><td>repariert</td><td>reparierte</td><td>hat repariert</td></tr>
+                <tr><td data-label="German Infinitive">basteln</td><td>কারুশিল্প করা</td><td>bastelt</td><td>bastelte</td><td>hat gebastelt</td></tr>
+                <tr><td data-label="German Infinitive">malen</td><td>রং করা/ছবি আঁকা</td><td>malt</td><td>malte</td><td>hat gemalt</td></tr>
+                <tr><td data-label="German Infinitive">zeichnen</td><td>আঁকা (পেন্সিল দিয়ে)</td><td>zeichnet</td><td>zeichnete</td><td>has gezeichnet</td></tr>
+                <tr><td data-label="German Infinitive">singen</td><td>গান করা</td><td>singt</td><td>sang</td><td>hat gesungen</td></tr>
+                <tr><td data-label="German Infinitive">musizieren</td><td>সঙ্গীত চর্চা করা</td><td>musiziert</td><td>musizierte</td><td>hat musiziert</td></tr>
+                <tr><td data-label="German Infinitive">aufstehen</td><td>উঠে দাঁড়ানো</td><td>steht auf</td><td>stand auf</td><td>ist aufgestanden</td></tr>
+                <tr><td data-label="German Infinitive">entdecken</td><td>আবিষ্কার করা</td><td>entdeckt</td><td>entdeckte</td><td>hat entdeckt</td></tr>
+                <tr><td data-label="German Infinitive">erfinden</td><td>উদ্ভাবন করা</td><td>erfindet</td><td>erfand</td><td>hat erfunden</td></tr>
+                <tr><td data-label="German Infinitive">probieren</td><td>চেষ্টা করা/স্বাদ নেওয়া</td><td>probiert</td><td>probierte</td><td>hat probiert</td></tr>
+                <tr><td data-label="German Infinitive">messen</td><td>মাপা</td><td>misst</td><td>maß</td><td>hat gemessen</td></tr>
+                <tr><td data-label="German Infinitive">wiegen</td><td>ওজন করা</td><td>wiegt</td><td>wog</td><td>hat gewogen</td></tr>
+                <tr><td data-label="German Infinitive">zählen</td><td>গণনা করা</td><td>zählt</td><td>zählte</td><td>hat gezählt</td></tr>
+                <tr><td data-label="German Infinitive">addieren</td><td>যোগ করা</td><td>addiert</td><td>addierte</td><td>hat addiert</td></tr>
+                <tr><td data-label="German Infinitive">subtrahieren</td><td>বিয়োগ করা</td><td>subtrahiert</td><td>subtrahierte</td><td>hat subtrahiert</td></tr>
+                <tr><td data-label="German Infinitive">multiplizieren</td><td>গুণ করা</td><td>multipliziert</td><td>multiplizierte</td><td>hat multipliziert</td></tr>
+                <tr><td data-label="German Infinitive">dividieren</td><td>ভাগ করা</td><td>dividiert</td><td>dividierte</td><td>hat dividiert</td></tr>
+                <tr><td data-label="German Infinitive">gewinnen</td><td>জেতা</td><td>gewinnt</td><td>gewann</td><td>hat gewonnen</td></tr>
+                <tr><td data-label="German Infinitive">verlieren</td><td>হারা</td><td>verliert</td><td>verlor</td><td>hat verloren</td></tr>
+                <tr><td data-label="German Infinitive">hoffen</td><td>আশা করা</td><td>hofft</td><td>hoffte</td><td>hat gehofft</td></tr>
+                <tr><td data-label="German Infinitive">zweifeln</td><td>সন্দেহ করা</td><td>zweifelt</td><td>zweifelte</td><td>hat gezweifelt</td></tr>
+                </tbody>
+        </table>
+    </div>
+
+    <a href="#" class="download-button" onclick="downloadCSV()">CSV ডাউনলোড করুন</a>
+
+    <script>
+        function downloadCSV() {
+            let csv = [];
+            let rows = document.querySelectorAll("table tr");
+            
+            for (let i = 0; i < rows.length; i++) {
+                let row = [], cols = rows[i].querySelectorAll("td, th");
+                
+                for (let j = 0; j < cols.length; j++) {
+                    let cellText = cols[j].innerText;
+                    // Escape commas and double quotes in cell content
+                    if (cellText.includes(',') || cellText.includes('"')) {
+                        cellText = '"' + cellText.replace(/"/g, '""') + '"';
+                    }
+                    row.push(cellText);
+                }
+                
+                csv.push(row.join(","));        
+            }
+
+            // Download CSV
+            let csvFile = new Blob([csv.join("\n")], { type: "text/csv;charset=utf-8;" });
+            let downloadLink = document.createElement("a");
+            downloadLink.download = "german_verbs.csv";
+            downloadLink.href = window.URL.createObjectURL(csvFile);
+            downloadLink.style.display = "none";
+            document.body.appendChild(downloadLink);
+            downloadLink.click();
+        }
+    </script>
+</body>
+</html>
